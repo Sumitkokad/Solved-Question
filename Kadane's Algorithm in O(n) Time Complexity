@@ -1,0 +1,16 @@
+public class Main{
+    public static void main(String args[]){
+        int arr[]={1,2,3,-9,8,-7,0,7,-6,5,4-2,-1,-4};
+    
+        int max=Integer.MIN_VALUE;
+        int curr=0;
+        for(int i=0;i<arr.length;i++){
+            curr+=arr[i];
+            max=Math.max(max,curr);
+            if(curr<0){
+                curr=0;
+            }
+        }
+        System.out.println("The maximum sum is: "+max);
+    }
+}
